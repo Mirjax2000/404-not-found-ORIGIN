@@ -13,9 +13,9 @@
 // :root {
 
 // }
-* {
-    outline: 1px solid red
-}
+// * {
+//     outline: 1px solid red
+// }
 
 /* border-box */
 html {
@@ -36,48 +36,59 @@ html {
 
 body {
     background-color: #ffffff;
+    color: #333333;
     padding: 40px 77px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 90rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 1rem;
 }
 
 header {
-    margin: 0 auto;
+    align-items: flex-start;
     max-width: 90rem;
-    
+
     h3 {
-        font-family: 'Inconsolata',
-        monospace;
+        font-family: 'Inconsolata', monospace;
         font-size: 1.5rem;
         letter-spacing: -0.08em;
     }
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 90rem;
-    margin-top: 200px;
+
+    img {
+        width: 50%;
+        height: auto;
+        max-width: 33.75rem;
+    }
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 2rem;
 }
 
 .content {
-    font-family: 'Space Mono',
-        monospace;
+    font-family: 'Space Mono', monospace;
+    width: 50%;
 
     h1 {
-        font-weight: 700;
         font-size: 4rem;
+        font-weight: 700;
         letter-spacing: -0.035em;
         margin-bottom: 2.25rem;
+        line-height: 5.9375rem;
     }
 
     p {
-        max-width: 23.75rem;
-        font-weight: 400;
         font-size: 1.5rem;
+        font-weight: 400;
         line-height: 36px;
         letter-spacing: -0.035em;
         margin-bottom: 4rem;
@@ -92,4 +103,58 @@ header {
         color: #ffffff;
         padding: 24px 43px;
     }
+}
+
+footer p {
+    color: #BDBDBD;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .875rem;
+    padding-top: 2rem;
+
+    text-align: center;
+
+}
+
+@media only screen and (max-width:999px) {
+
+    .content {
+
+        h1 {
+            font-size: 3rem;
+            line-height: 4.4375rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 27px;
+        }
+    }
+}
+
+@media only screen and (max-width:700px) {
+    body {
+
+        padding: 40px 24px;
+        min-width: 350px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .container {
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            width: 100%;
+        }
+    }
+
 }
