@@ -1,11 +1,21 @@
 @use 'var' as *;
 @use 'mix' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
+
+// font-family: 'Inconsolata',
+// monospace;
+// font-family: 'Montserrat',
+// sans-serif;
+// font-family: 'Space Mono',
+// monospace;
 
 // :root {
-   
+
 // }
+* {
+    outline: 1px solid red
+}
 
 /* border-box */
 html {
@@ -25,6 +35,61 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ffffff;
+    padding: 40px 77px;
 }
 
+header {
+    margin: 0 auto;
+    max-width: 90rem;
+    
+    h3 {
+        font-family: 'Inconsolata',
+        monospace;
+        font-size: 1.5rem;
+        letter-spacing: -0.08em;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 90rem;
+    margin-top: 200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content {
+    font-family: 'Space Mono',
+        monospace;
+
+    h1 {
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: -0.035em;
+        margin-bottom: 2.25rem;
+    }
+
+    p {
+        max-width: 23.75rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+        margin-bottom: 4rem;
+    }
+
+    a {
+        font-weight: 700;
+        letter-spacing: -0.035em;
+        font-size: .875rem;
+        line-height: 1.3125rem;
+        background-color: #333333;
+        color: #ffffff;
+        padding: 24px 43px;
+    }
+}
