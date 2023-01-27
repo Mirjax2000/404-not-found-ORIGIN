@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* border-box */
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* --- vyber --- */
+::-moz-selection {
+  background-color: #1683ff;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #1683ff;
+  color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 40px 77px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+header {
+  align-items: flex-start;
+  max-width: 90rem;
+}
+header h3 {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  letter-spacing: -0.08em;
+}
+
+.container img {
+  width: 50%;
+  height: auto;
+  max-width: 33.75rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.content {
+  font-family: "Space Mono", monospace;
+  width: 50%;
+}
+.content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  margin-bottom: 2.25rem;
+  line-height: 5.9375rem;
+}
+.content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  margin-bottom: 4rem;
+}
+.content a {
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 24px 43px;
+}
+
+footer p {
+  color: #BDBDBD;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 999px) {
+  .content h1 {
+    font-size: 3rem;
+    line-height: 4.4375rem;
+  }
+  .content p {
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    padding: 40px 24px;
+    min-width: 350px;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  .container .content {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
